@@ -1,8 +1,8 @@
 +++
-title = ""
+title = "{{ replace .Name "-" " " | title }}"
 description = ""
 author = ""
-date = ""
+date = {{ .Date }}
 tags = [""]
 categories = [""]
 comments = true

@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ $paginator := .Paginate (where .Site.RegularPages ".Params.categories" "!=" nil)}}
+  {{ $paginator := .Paginate ( where .Site.RegularPages ".Params.categories" "!=" nil ) }}
   {{ range $paginator.Pages }}
     {{ .Render "content-list" }}
   {{ end }}

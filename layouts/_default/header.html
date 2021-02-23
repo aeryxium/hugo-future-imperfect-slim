@@ -12,7 +12,7 @@
   </div>
   <div class="meta">
     <time datetime="{{ .Date }}">{{ .Render "date" }}</time>
-    {{ with .Params.author }}<p>{{ . }}</p>{{ end }}
-    {{ if .Site.Params.ReadingTime }}<p>{{ i18n "reading_time" .ReadingTime }}</p>{{ end }}
+    {{ with .Params.author }}<p class="p_meta">{{ . }}</p>{{ end }}
+    {{ if .Site.Params.ReadingTime }}<p class="p_meta">{{ i18n "reading_time" .ReadingTime }}</p>{{ end }}
   </div>
 </header>

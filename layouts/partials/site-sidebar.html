@@ -4,7 +4,7 @@
       <header>
         <h1>{{ i18n "recent_posts" }}</h1>
       </header>
-      {{ range first (.Site.Params.sidebar.postAmount | default 5) (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+      {{ range first (.Site.Params.sidebar.postAmount | default 5) (where .Site.RegularPages ".Params.categories" "!=" nil) }}
       <article class="mini-post">
           {{ .Render "featured" }}
         <header>

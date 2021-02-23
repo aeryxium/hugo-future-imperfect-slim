@@ -328,6 +328,13 @@ h6 {
   }
 }
 
+p {
+  text-align: justify;
+  &.p_meta {
+    text-align: right;
+  }
+}
+
 blockquote {
   border-left: 4px solid $border-color;
   font-style: italic;
